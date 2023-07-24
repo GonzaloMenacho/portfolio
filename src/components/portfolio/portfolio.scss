@@ -10,7 +10,7 @@
     h1{
         
         font-size: 100px;
-        color: $mainColor;
+        color: white;
         cursor: default;
 
         @include mobile{
@@ -44,7 +44,7 @@
         }
 
         .item{
-            width: 91.5vh;
+            width: 110vh;
             height: 60vh;
             border-radius: 15px;
             border: 1px solid black;

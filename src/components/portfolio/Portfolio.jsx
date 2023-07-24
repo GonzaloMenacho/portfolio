@@ -12,16 +12,16 @@ export default function Portfolio() {
 
   const list = [
     {
-      id: "cSharp",
-      title: "C# / .NET",
-    },
-    {
-      id: "assembly",
-      title: "Assembly",
-    },
-    {
       id: "web",
-      title: "React JS",
+      title: "C# Desktop App",
+    },
+    {
+      id: "cSharp",
+      title: "Full-Stack Web App",
+    },
+    {
+      id: "python",
+      title: "Python Discord Bot",
     }
   ];
 
@@ -30,9 +30,9 @@ export default function Portfolio() {
     switch (selected) {
       case "cSharp": setData(cSharpPortfolio);
         break;
-      case "assembly": setData(assemblyPortfolio);
+      case "web": setData(assemblyPortfolio);
         break;
-      case "web": setData(webPortfolio);
+      case "python": setData(webPortfolio);
         break;
       default:
         setData(cSharpPortfolio);
@@ -42,7 +42,7 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>Projects</h1>
       <ul>
         {list.map(item => (
           <PortfolioList
