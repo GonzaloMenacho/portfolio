@@ -12,6 +12,9 @@
     .left{
         flex: 0.5;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
 
         .imgContainer{
@@ -23,9 +26,13 @@
             align-items: flex-end;
             justify-content: center;
             float: right;
+            width: 60vw;
+            overflow: hidden;
 
             @include mobile{
                 align-items: flex-start;
+                width: 65vw;
+
             }
             
             
@@ -37,7 +44,6 @@
 
     .right{ 
         flex: 0.5;
-        position: relative;
 
         .wrapper{
             width: 100%;
@@ -105,7 +111,12 @@
             display: flex;
             align-items: flex-end;
             justify-content: center;
-            float: left;
+
+            @include mobile{
+                width: 30%;
+                align-items: center;
+            }
+
             }
     }
     }

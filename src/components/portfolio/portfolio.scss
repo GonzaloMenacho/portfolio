@@ -14,7 +14,7 @@
         cursor: default;
 
         @include mobile{
-            font-size: 20px;
+            font-size: 30px;
         }
     }
 
@@ -59,13 +59,14 @@
             border-color: #959DA6;
 
             @include mobile{
-                width: 130px;
-                height: 100px;
+                width: 50vh;
+                height: 75vh;
+
             }
         
             h3{
                 position: absolute;
-                font-size: 60px;
+                font-size: 30px;
                 cursor: default;
             }
             img{
