@@ -26,12 +26,12 @@
             align-items: flex-end;
             justify-content: center;
             float: right;
-            width: 60vw;
+            width: 80vw;
             overflow: hidden;
 
             @include mobile{
                 align-items: flex-start;
-                width: 65vw;
+                width: 75vw;
 
             }
             
@@ -53,15 +53,18 @@
             flex-direction: column;
             justify-content: center;
             color: white;
+            
 
             @include mobile{
                 padding-left: 0;
                 align-items: center;
+                
             }
 
             h1{
                 font-size: 60px;
                 margin: 10px 0;
+                overflow: hidden;
 
                 @include mobile{
                     font-size: 40px;
@@ -70,10 +73,12 @@
             }
             h2{
                 font-size: 35px;
+                overflow: hidden;
             }
             h3{
                 font-size: 30px;
-
+                overflow: hidden;
+                
                 @include mobile{
                     font-size: 20px;
                 }
@@ -115,6 +120,7 @@
             @include mobile{
                 width: 30%;
                 align-items: center;
+                position: relative;
             }
 
             }

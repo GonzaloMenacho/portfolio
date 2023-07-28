@@ -6,7 +6,7 @@ import Contact from "./components/contact/Contact"
 import "./app.scss"
 import { useState } from "react"
 import Menu from "./components/menu/Menu"
-import GitHub from "./components/education/GitHub"
+import GitHub from "./components/git/GitHub"
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false);

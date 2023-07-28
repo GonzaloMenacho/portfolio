@@ -14,7 +14,8 @@
         cursor: default;
 
         @include mobile{
-            font-size: 30px;
+            font-size: 40px;
+            overflow: hidden;
         }
     }
 
@@ -28,6 +29,8 @@
             margin: 10px 0;
             flex-wrap: wrap;
             justify-content: center;
+            
+            overflow: hidden;
 
         }
     }
@@ -41,6 +44,8 @@
 
         @include mobile{
             width: 100%;
+            
+            overflow: hidden;
         }
 
         .item{

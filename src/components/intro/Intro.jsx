@@ -12,7 +12,7 @@ export default function Intro() {
       backDelay: 2000,
       backSpeed: 50,
       typeSpeed: 50,
-      strings: ["C# Developer", "Programmer",  "Software Engineering Student"],
+      strings: ["Software Engineer", "IT & Data Coordinator",  "Web Developer"],
      });
   },[]);
   return (
