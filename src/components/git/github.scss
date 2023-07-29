@@ -1,120 +1,155 @@
 @import "../../global.scss";
 
 .github {
-    background-color: #364659;
+  background-color: #364659;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mobile {
+    justify-content: space-around;
+  }
+
+  .header {
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+
+  .git {
+    padding-left: 1vh;
+    height:90px;
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 100px;
+    color: white;
+    overflow: hidden;
+
+    @include mobile {   
+      font-size: 40px;
+    }
+  }
+  .container {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include mobile {
-        justify-content: space-around;
+      flex-direction: column;
+      height: 100%;
     }
 
-    h1 {
-        font-size: 100px;
-        color: white;
-        overflow: hidden;
+    h3 {
+      text-align: center;
+      padding: 5px;
+      font-size: 30px;
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+
+    a {
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+
+      &:visited {
+        color: inherit;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    .card {
+      margin: 3.33vh 20px 40px 20px;
+      width: 25vh;
+      height: 55vh;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px -8px white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px;
+      transition: all 0.05 ease;
+
+      @include mobile {
+        height: 15vh;
+        margin: 3vh;
+      }
+
+      &.featured {
+        width: 30vh;
+        height: 60vh;
+        margin: 3.33vh 3vh 3.33vh 3vh;
 
         @include mobile {
-            font-size: 40px;
+          width: 30vh;
+          height: 15vh;
+          margin: 3vh;
         }
-    }
+      }
 
-    .container {
-        color: white;
-        width: 100%;
-        height: 100%;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .top {
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        @include mobile {
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .card {
-            width: 25vh;
-            height: 60vh;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px -8px white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding: 20px;
-            transition: all .05 ease;
+        img {
+          overflow: hidden;
+          &.app {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            margin: 0 30px;
 
             @include mobile {
-                height: 180px;
-                margin: 10px 0;
+              width: 80px;
+              height: auto;
             }
-
-            &.featured {
-                width: 30vh;
-                height: 65vh;
-                margin: 0 30px;
-
-                @include mobile {
-                    width: 250px;
-                    height: 180px;
-                    margin: 1px;
-                }
-            }
-
-            &:hover {
-                transform: scale(1.1);
-            }
-
-            .top {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                img {
-                    &.left,
-                    &.right {
-                        height: 25px;
-                        border-radius: 50%;
-                    }
-                    &.app {
-                        height: 100px;
-                        width: 100px;
-                        object-fit: cover;
-                        margin: 0 30px;
-
-                        @include mobile {
-                            width: 30px;
-                            height: 30px;
-                        }
-                    }
-                }
-            }
-
-            .center {
-                padding: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                @include mobile {
-                    font-size: 12px;
-                    padding: 5px;
-                }
-            }
-
-            .bottom {
-                padding: 10px;
-                background-color: #5e6f86;
-                border-radius: 10px;
-
-                h3 {
-                    margin-bottom: 5px;
-
-                    @include mobile {
-                        font-size: 14px;
-                    }
-                }
-            }
+          }
         }
+      }
+
+      .center {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile {
+          font-size: 12px;
+          padding: 5px;
+        }
+      }
+
+      .bottom {
+        overflow: hidden;
+        text-indent: 0.2in;
+        margin: 1vh;
+        padding: 1vh;
+        background-color: #5e6f86;
+        border-radius: 10px;
+        @include mobile {
+          display: none;
+        }
+      }
     }
+  }
 }

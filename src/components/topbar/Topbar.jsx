@@ -21,7 +21,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
               <span>menachoga@gmail.com</span>
             </div>
           </a>
-          <a href="https://www.linkedin.com" className="link" target="_blank">
+          <a href="https://www.linkedin.com/in/gonzalo-menacho/" className="link" target="_blank">
             <div className="itemContainer">
               <LinkedIn className="icon" />
               <span>LinkedIn</span>
