@@ -41,6 +41,10 @@
         color: white;
         margin-right: 40px;
         transition: all 1s ease;
+
+        @include mobile{
+          font-size: 35px;
+        }
       }
 
       .itemContainer {

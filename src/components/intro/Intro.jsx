@@ -28,11 +28,6 @@ export default function Intro() {
             <h1>Gonzalo Menacho</h1>
             <h3> I'm a <span ref={textRef}> </span></h3>
           </div>
-          <a href="#portfolio">
-          <div className="imgContainer2">
-            <img src="assets/down.gif" alt="" />
-            </div>
-          </a>
         </div>
     </div>
   )

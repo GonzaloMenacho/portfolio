@@ -22,7 +22,7 @@ export default function GitHub() {
     {
       id: 3,
       name: "Python Discord Bot",
-      desc: "My team engineered a multi-functional Discord bot in Python, with a focus on entertainment, social engagement, and chat moderation. We incorporated a suite of mini-games and an SQLite database for server statistics. We enabled connectivity with multiple APIs for seamless interaction with social media platforms.",
+      desc: "My team engineered a Discord bot in Python, with a focus on entertainment, social engagement, and chat moderation. We incorporated a suite of mini-games and an SQLite database for server statistics. We enabled connectivity with multiple APIs for seamless interaction with social media platforms.",
       img: "assets/discord.png",
       repo: "https://github.com/GonzaloMenacho/GonziBot",
     },

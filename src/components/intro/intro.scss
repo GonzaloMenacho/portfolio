@@ -31,7 +31,7 @@
 
             @include mobile{
                 align-items: flex-start;
-                width: 75vw;
+                width: 65vw;
 
             }
             
@@ -101,29 +101,7 @@
                         opacity: 0;
                     }
                 }
-
             }
-
         }
-
-        a{
-            position: absolute;
-            bottom: 10px;
-            
-            .imgContainer2{
-            width: 30%;
-            border-radius: 50%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-
-            @include mobile{
-                width: 30%;
-                align-items: center;
-                position: relative;
-            }
-
-            }
-    }
     }
 }

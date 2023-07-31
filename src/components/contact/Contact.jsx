@@ -25,7 +25,7 @@ export default function Contact() {
           <img src="assets/email.png" alt="" />
         </div>
         <div className="right">
-          <h2>Contact Me.</h2>
+          <h2>Let's Connect.</h2>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" name="user_name"/>
             <input type="text" placeholder="Subject" name="user_subject" />
